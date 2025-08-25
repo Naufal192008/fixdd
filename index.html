@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BOMBÓNI</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="w.css">
+</head>
+<body>
+    <header>
+        <div class="container header-container">
+            <a href="p.png" class="logo">
+                <span>BOMBÓNI<span class="logo-highlight"></span></span>
+            </a>
+            
+            <nav id="main-nav">
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#products">Produk</a></li>
+                    <li><a href="#about">Tentang Kami</a></li>
+                    <li><a href="#testimonials">Testimoni</a></li>
+                    <li><a href="#contact">Kontak</a></li>
+                    <li>
+                        <a href="#" class="cart-icon" id="cart-icon">
+                            <i class="fas fa-shopping-cart"></i>
+                            <span class="cart-count">0</span>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+            
+            <div class="mobile-menu-btn" id="mobile-menu-btn">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </header>
+
+    <section class="hero" id="home">
+        <div class="hero-content">
+            <h1>MAU KENYANG TAPI PRAKTIS...</h1>
+            <p>Disini kita menjual BOMBÓLONI yang sangat enak dan murah meriah</p>
+            <div class="hero-btns">
+                <a href="#products" class="btn btn-primary">Produk</a>
+                <a href="#contact" class="btn btn-secondary">Hubungi Kami</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="products" id="products">
+        <div class="container">
+            <h2 class="section-title">Produk Kami</h2>
+            
+            <div class="product-filters">
+                <button class="filter-btn active" data-filter="all">Semua</button>
+                <button class="filter-btn" data-filter="DONUTS ORI">DONUTS ORI</button>
+                <button class="filter-btn" data-filter="DONUTS RASA">DONUTS RASA</button>
+                <button class="filter-btn" data-filter="paket">Paket</button>
+            </div>
+            
+            <div class="product-grid" id="product-grid">
+                <!-- Produk akan ditampilkan di sini melalui JavaScript -->
+            </div>
+        </div>
+    </section>
+
+    <section class="testimonials" id="testimonials">
+        <div class="container">
+            <h2 class="section-title">Testimoni Pelanggan</h2>
+            
+            <div class="testimonial-slider">
+                <div class="testimonial-item">
+                    <div class="testimonial-content">
+                        <img src="k.jpg" alt="Pelanggan 1" class="testimonial-avatar">
+                        <div class="testimonial-text">
+                            <p>"Donatnya lembut dan isiannya melimpah! Buat saya nagih dan saya sangat suka."</p>
+                            <div class="testimonial-author">
+                                <span class="testimonial-name">RAJWA</span>
+                                <div class="testimonial-rating">★★★★★</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="testimonial-item">
+                    <div class="testimonial-content">
+                        <img src="f.jpg" alt="Pelanggan 2" class="testimonial-avatar">
+                        <div class="testimonial-text">
+                            <p>"Donut Paket yang bener bener worth banget untuk harga segini dan udah gitu rasanya mwantep poll!"</p>
+                            <div class="testimonial-author">
+                                <span class="testimonial-name">FAQIH</span>
+                                <div class="testimonial-rating">★★★★★</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="testimonial-item">
+                    <div class="testimonial-content">
+                        <img src="m.jpg" alt="Pelanggan 3" class="testimonial-avatar">
+                        <div class="testimonial-text">
+                            <p>"Pengirimannya cepat dan donatnya masih fresh saat sampai."</p>
+                            <div class="testimonial-author">
+                                <span class="testimonial-name">MAULANA</span>
+                                <div class="testimonial-rating">★★★★★</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="testimonial-item">
+                    <div class="testimonial-content">
+                        <img src="WhatsApp Image 2025-08-20 at 12.35.02.jpeg" alt="Pelanggan 3" class="testimonial-avatar">
+                        <div class="testimonial-text">
+                            <p>"Sumpah... ini udah gede... murah... dan yang ga kalah yaitu rasanya yang ENAK POLLL"</p>
+                            <div class="testimonial-author">
+                                <span class="testimonial-name">Kaka Kelas</span>
+                                <div class="testimonial-rating">★★★★★</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="testimonial-item">
+                    <div class="testimonial-content">
+                        <img src="WhatsApp Image 2025-08-23 at 17.59.38.jpeg" alt="Pelanggan 3" class="testimonial-avatar">
+                        <div class="testimonial-text">
+                            <p>"Pengirimannya ramah dan cepat."</p>
+                            <div class="testimonial-author">
+                                <span class="testimonial-name"></span>
+                                <div class="testimonial-rating">★★★★★</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="testimonial-item">
+                    <div class="testimonial-content">
+                        <img src="WhatsApp Image 2025-08-23 at 20.49.07.jpeg" alt="Pelanggan 3" class="testimonial-avatar">
+                        <div class="testimonial-text">
+                            <p>"pengiriman cepat,abang nya ramah dan donuts nya juga MUANTEP REKK."</p>
+                            <div class="testimonial-author">
+                                <span class="testimonial-name">HUMAIRA</span>
+                                <div class="testimonial-rating">★★★★★</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="testimonial-item">
+                    <div class="testimonial-content">
+                        <img src="OKT.jpg" alt="Pelanggan 3" class="testimonial-avatar">
+                        <div class="testimonial-text">
+                            <p>"THE DONUTS ARE SO DELICIOUS AND HUGE.... YOU HAVE TO TRY THEM TO KNOW."</p>
+                            <div class="testimonial-author">
+                                <span class="testimonial-name">MA'AM OCTA</span>
+                                <div class="testimonial-rating">★★★★★</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="testimonial-nav">
+                <button class="prev-testimonial"><i class="fas fa-chevron-left"></i></button>
+                <button class="next-testimonial"><i class="fas fa-chevron-right"></i></button>
+            </div>
+        </div>
+    </section>
+
+    <section class="about" id="about">
+        <div class="container">
+            <h2 class="section-title">Tentang Kami</h2>
+            
+            <div class="about-content">
+                <div class="about-img">
+                    <img src="ppp.jpg" alt="Tentang BOMBOLONI">
+                </div>
+                
+                <div class="about-text">
+                    <h2>BOMBOLONI</h2>
+                    <p>Kami menjual banyak varian rasa donut yang unik dan gembul.</p>
+                    <p>Kami menggunakan bahan-bahan terbaik dan desain kreatif untuk menciptakan Donuts yang terbaik.</p>
+                    <p>Visi kami adalah menjadi penyedia donat terbaik di Indonesia, sementara misi kami adalah memberikan pengalaman berbelanja yang menyenangkan dan produk yang memuaskan untuk setiap pelanggan.</p>
+                    <a href="#contact" class="btn btn-primary">Hubungi Kami</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="contact" id="contact">
+        <div class="container">
+            <h2 class="section-title">Kontak Kami</h2>
+            
+            <div class="contact-container">
+                <div class="contact-info">
+                    <h3>Informasi Kontak</h3>
+                    
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div>
+                            <h4>Alamat</h4>
+                            <p>Jl.Bambu Wulung 2,RT005/RW05,Setu,Kec.Cipayung</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-phone-alt"></i>
+                        </div>
+                        <div>
+                            <h4>Telepon</h4>
+                            <p>+62 812-1161-9370
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div>
+                            <h4>Email</h4>
+                            <p>nmurtadho19@gmail.com</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-clock"></i>
+                        </div>
+                    </div>
+                    
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://www.instagram.com/bomboni_co?igsh=MXg1cWNrZXV5ZGV6Ng=="><i class="fab fa-instagram"></i></a>
+                        <a href="https://wa.me/6281211619370"><i class="fab fa-whatsapp"></i></a>
+                        <a href="https://vt.tiktok.com/ZSAJkRyo6/"><i class="fab fa-tiktok"></i></a>
+                    </div>
+                </div>
+                
+                <div class="contact-form">
+                    <h3>Kirim Pesan</h3>
+                    <form id="message-form">
+                        <div class="form-group">
+                            <label for="name">Nama Anda</label>
+                            <input type="text" id="name" class="form-control" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" class="form-control" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="subject">Subjek</label>
+                            <input type="text" id="subject" class="form-control" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="message">Pesan</label>
+                            <textarea id="message" class="form-control" required></textarea>
+                        </div>
+                       
+                        <div class="form-group">
+                            <label for="order-distance">Jarak Pengiriman (km)</label>
+                            <input type="number" id="order-distance" class="form-control" min="1" required>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary">Kirim Pesan</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-container">
+                <div class="footer-col">
+                    <h3>BOMBOLONI</h3>
+                    <p>Spesialis donat lezat dengan berbagai varian rasa untuk setiap kesempatan.</p>
+                    <p>Kualitas terbaik dengan harga terjangkau.</p>
+                </div>
+                
+                <div class="footer-col">
+                    <h3>Produk</h3>
+                    <ul class="footer-links">
+                        <li><a href="#products" data-filter="DONUTS ORI">Donat Original</a></li>
+                        <li><a href="#products" data-filter="DONUTS RASA">Donat Varian Rasa</a></li>
+                        <li><a href="#products" data-filter="paket">Paket Donat</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-col">
+                    <h3>Link Cepat</h3>
+                    <ul class="footer-links">
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#products">Produk</a></li>
+                        <li><a href="#about">Tentang Kami</a></li>
+                        <li><a href="#contact">Kontak</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-col">
+                    <h3>Newsletter</h3>
+                    <p>Berlangganan newsletter kami untuk mendapatkan promo dan produk terbaru.</p>
+                    <form id="newsletter-form">
+                        <div class="form-group">
+                            <input type="email" class="form-control" placeholder="Email Anda" required>
+                        </div>
+                        <button type="submit" class="btn btn-secondary">Berlangganan</button>
+                    </form>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2023 BOMBOLONI. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+    
+    <div class="modal" id="cart-modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2>Keranjang Belanja</h2>
+                <span class="close-modal">&times;</span>
+            </div>
+            
+            <div class="modal-body">
+                <div class="cart-items" id="cart-items">
+                    <p class="empty-cart-message">Keranjang belanja Anda kosong.</p>
+                </div>
+                
+                <div class="cart-summary">
+                    <div class="cart-total">
+                        <span>Total:</span>
+                        <span id="cart-total">Rp 0</span>
+                    </div>
+                    
+                    <div class="cart-actions">
+                        <button class="btn btn-secondary" id="continue-shopping">Lanjut Belanja</button>
+                        <button class="btn btn-primary" id="checkout-btn">Pesan Sekarang</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal" id="order-modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2>Formulir Pemesanan</h2>
+                <span class="close-modal">&times;</span>
+            </div>
+            
+            <div class="modal-body">
+                <form class="order-form" id="order-form">
+                    <div class="form-group">
+                        <label for="order-name">Nama Lengkap</label>
+                        <input type="text" id="order-name" class="form-control" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="order-phone">Nomor WhatsApp</label>
+                        <input type="tel" id="order-phone" class="form-control" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="order-purpose">Keperluan</label>
+                        <input type="text" id="order-purpose" class="form-control" placeholder="Contoh: Ulang Tahun, Anniversary, dll." required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="order-address">Alamat Pengiriman (WAJIB LENGKAP)</label>
+                        <textarea id="order-address" class="form-control"></textarea>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="order-note">Catatan Tambahan (Opsional)</label>
+                        <textarea id="order-note" class="form-control"></textarea>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label>Produk yang Dipesan:</label>
+                        <div id="order-products">
+                        </div>
+                    </div>
+                    
+                    <div class="form-actions">
+                        <button type="submit" class="btn btn-primary">Kirim Pesanan via WhatsApp</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script src="p.js"></script>
+</body>
+</html>
