@@ -54,7 +54,7 @@ const products = [
             if (day === 3) return 15000;
             return 16000;
         })(),
-        original_price: 7000,
+        original_price: 25000,
         image: "ko.jpg"
     },
     {
